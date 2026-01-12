@@ -37,7 +37,7 @@
 */
 /* Add any encoder(s) you have enabled to the sensors node, separated by spaces. */
 &sensors {
-    sensors = <&encoder_1>;
+    sensors = <&encoder_1_top_row>;
 };
 
 / {
