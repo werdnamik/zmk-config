@@ -4,10 +4,10 @@
  * SPDX-License-Identifier: MIT
  */
 
-/ include <behaviors.dtsi>
-/ include <dt-bindings/zmk/bt.h>
-/ include <dt-bindings/zmk/keys.h>
-/ include <dt-bindings/zmk/outputs.h>
+# include <behaviors.dtsi>
+# include <dt-bindings/zmk/bt.h>
+# include <dt-bindings/zmk/keys.h>
+# include <dt-bindings/zmk/outputs.h>
 
 
 /* Enable ONLY ONE of the &encoder_1 nodes. They are wired to the same pins.*/
@@ -30,10 +30,11 @@
 };
 */
 
+/*
 &encoder_4 {
     status = "okay";
 };
-
+*/
 /* Add any encoder(s) you have enabled to the sensors node, separated by spaces. */
 &sensors {
     sensors = <&encoder_1>;
