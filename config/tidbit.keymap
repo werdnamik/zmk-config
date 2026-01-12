@@ -15,10 +15,10 @@
 &encoder_1 {
     status = "okay";
 };
-*/
 &encoder_1_top_left {
     status = "okay";
 };
+*/
 
 /*
 &encoder_2 {
