@@ -11,12 +11,13 @@
 # include <dt-bindings/zmk/rgb.h>
 
 
-
 /* Enable ONLY ONE of the &encoder_1 nodes. They are wired to the same pins.*/
-/*
+
 &encoder_1 {
     status = "okay";
 };
+
+/*
 &encoder_1_top_left {
     status = "okay";
 };
@@ -64,7 +65,7 @@
                 &out OUT_TOG    &out OUT_USB    &out OUT_BLE    &none
                 &bt BT_SEL 0    &bt BT_PRV      &bt BT_NXT      &bt BT_CLR
                 &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &trans
-                &rgb_ug RGB_TOG  &rgb_ug RGB_BI &rgb_ug RGB_BD      &none
+                &rgb_ug RGB_TOG &none        &none           &none
              >;
 
              sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
