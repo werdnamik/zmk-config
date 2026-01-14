@@ -16,7 +16,7 @@
 };
 
 &spi3 {
-    compatible = "nordic,nrf-spim";
+    compatible = "tidbit";
     status = "okay";
 
     pinctrl-0 = <&spi3_default>;
