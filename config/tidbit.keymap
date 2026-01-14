@@ -43,17 +43,21 @@
     sensors = <&encoder_1>;
 };
 
+&led_strip {
+    chain-length = <8>;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-                                &kp C_MUTE 	&kp DELETE &kp KP_SLASH
-                &kp KP_NUMBER_7 &kp KP_NUMBER_8 &kp KP_NUMBER_9 &kp KP_ASTERISK
-                &kp KP_NUMBER_4 &kp KP_NUMBER_5 &kp KP_NUMBER_6 &kp KP_MINUS
-                &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_PLUS
-                &kp HASH    &kp KP_NUMBER_0 &kp KP_DOT    &lt 1 ENTER
+                                &kp C_MUTE 	&kp KP_SLASH &kp KP_ASTERISK
+                &kp KP_NUMBER_7 &kp KP_NUMBER_8 &kp KP_NUMBER_9 &kp KP_MINUS
+                &kp KP_NUMBER_4 &kp KP_NUMBER_5 &kp KP_NUMBER_6 &kp KP_PLUS
+                &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kt 1 DELETE
+            	&kp LALT   &kp KP_NUMBER_0 &kp KP_DOT    &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
