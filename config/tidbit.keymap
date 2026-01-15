@@ -54,7 +54,7 @@
                 &kp KP_NUMBER_7 &kp KP_NUMBER_8 &kp KP_NUMBER_9 &kp KP_MINUS
                 &kp KP_NUMBER_4 &kp KP_NUMBER_5 &kp KP_NUMBER_6 &kp KP_PLUS
                 &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &lt 1 DELETE
-            	&kp LALT   &kp KP_NUMBER_0 &kp KP_DOT    &kp ENTER
+            	&kp LALT   &kp KP_NUMBER_0 &kp KP_DOT    &lt 2 ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -66,7 +66,7 @@
                 &out OUT_TOG    &out OUT_USB    &out OUT_BLE    &none
                 &bt BT_SEL 0    &bt BT_SEL 1      &bt BT_NXT      &bt BT_CLR
                 &rgb_ug RGB_BRI   &rgb_ug RGB_SAI    &rgb_ug RGB_HUI    &none
-                &rgb_ug RGB_BRD	&rgb_ug RGB_SAD	&rgb_ug RGB_HUD	&trans
+                &rgb_ug RGB_BRD	&rgb_ug RGB_SAD	&rgb_ug RGB_HUD	&rgb_ug RGB_EFF
              >;
 
              sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
